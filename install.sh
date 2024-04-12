@@ -273,6 +273,7 @@ else
 fi
 
 rm -r /home/${user}/cs2-modded-server-${BRANCH} /home/${user}/${BRANCH}.zip
+echo "writing admins file"
 echo "{"veVo": {"identity": "76561198088273286","groups": ["#css/admin"]}}" >> home/${user}/cs2/game/csgo/addons/counterstrikesharp/configs/admins.json
 echo "Starting server on $PUBLIC_IP:$PORT"
 # https://developer.valvesoftware.com/wiki/Counter-Strike_2/Dedicated_Servers#Command-Line_Parameters
