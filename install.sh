@@ -240,7 +240,7 @@ echo "echo \"secrets.cfg executed\"" >> /home/${user}/cs2/game/csgo/cfg/secrets.
 
 echo "------ Merging in custom files from /home/${user}/cs2/${CUSTOM_FILES}/ to /home/${user}/cs2/game/csgo/"
 cp -RT /home/${user}/cs2/${CUSTOM_FILES}/ /home/${user}/cs2/game/csgo/
-mkdir home/${user}/cs2/game/csgo/addons/counterstrikesharp/configs
+mkdir -p home/${user}/cs2/game/csgo/addons/counterstrikesharp/configs
 cp /home/${user}/cs2/${CUSTOM_FILES}/addons/counterstrikesharp/configs\ /admins.json home/${user}/cs2/game/csgo/addons/counterstrikesharp/configs/admins.json
 
 chown -R ${user}:${user} /home/${user}/cs2
