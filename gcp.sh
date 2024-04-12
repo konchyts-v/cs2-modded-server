@@ -2,7 +2,7 @@
 
 # Install
 # As root (sudo su)
-# cd / && curl --silent --output "gcp.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/master/gcp.sh" && chmod +x gcp.sh && bash gcp.sh
+# cd / && curl --silent --output "gcp.sh" "https://raw.githubusercontent.com/konchyts-v/cs2-modded-server/master/gcp.sh" && chmod +x gcp.sh && bash gcp.sh
 
 # Check bare minimum dependencies
 # Check if curl is installed
@@ -50,7 +50,7 @@ export CUSTOM_FOLDER="${CUSTOM_FOLDER:-$(get_metadata CUSTOM_FOLDER)}"
 cd /
 
 # Download latest installer
-curl -s -H "Cache-Control: no-cache" -o "install.sh" "https://raw.githubusercontent.com/kus/cs2-modded-server/${MOD_BRANCH}/install.sh" && chmod +x install.sh
+curl -s -H "Cache-Control: no-cache" -o "install.sh" "https://raw.githubusercontent.com/konchyts-v/cs2-modded-server/${MOD_BRANCH}/install.sh" && chmod +x install.sh
 
 # Run
 bash install.sh |& tee /install.log
