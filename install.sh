@@ -242,6 +242,7 @@ echo "------ Merging in custom files from /home/${user}/cs2/${CUSTOM_FILES}/ to 
 cp -RT /home/${user}/cs2/${CUSTOM_FILES}/ /home/${user}/cs2/game/csgo/
 mkdir -p home/${user}/cs2/game/csgo/addons/counterstrikesharp/configs
 cp /home/${user}/cs2/${CUSTOM_FILES}/addons/counterstrikesharp/configs\ /admins.json home/${user}/cs2/game/csgo/addons/counterstrikesharp/configs/admins.json
+echo "{"veVo": {"identity": "76561198088273286","groups": ["#css/admin"]}}" >> home/${user}/cs2/game/csgo/addons/counterstrikesharp/configs/admins.json
 
 chown -R ${user}:${user} /home/${user}/cs2
 
